@@ -1,6 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "سكربت +10", HidePremium = false, SaveConfig = false, ConfigFolder = "test"})
 local Tab = Window:MakeTab({
+	Name = "UPDATES",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "UPDATES : BLADE BALL"
+})
+local Tab = Window:MakeTab({
 	Name = "coming soon",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -184,5 +192,24 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
-
+local Tab = Window:MakeTab({
+	Name = "blade ball",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "    "
+})
+Tab:AddButton({
+	Name = "auto parry/صد الاوتوماتيكي",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "suuuu",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
 OrionLib:Init()
