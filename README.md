@@ -180,7 +180,7 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
-	Name = "تنقل بين اللاعبين",
+	Name = "تنقل بين الاماكن",
 	Callback = function()
       loadstring(game:HttpGet("https://pastebin.com/raw/HZA5Yg8w"))()
       OrionLib:MakeNotification({
@@ -192,6 +192,15 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
+Tab:AddToggle({
+	Name = "سرعه الرهيبه",
+	Default = true,
+	Callback = function(Value)
+ game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 50
+		print(Value)
+	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "blade ball",
 	Icon = "rbxassetid://4483345998",
@@ -212,4 +221,5 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
+
 OrionLib:Init()
