@@ -196,7 +196,7 @@ Tab:AddToggle({
 	Name = "سرعه الرهيبه",
 	Default = true,
 	Callback = function(Value)
- game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 50
+ game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 99
 		print(Value)
 	end    
 })
